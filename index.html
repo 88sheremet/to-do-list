@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#b1abab">
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="info">Руководсто к пользованию</button>
+        <button type="button" class="hidden">Скрыть</button>
+        <div class="info__container">
+            <ul>
+                <li>Клик правой клавишей мыши - выделить событие</li>
+                <li>CTRL + Правая клавиша мыши - удалить событие</li>
+                <li>Клик по чекбоксу - сменить статус события на "Выполнено"</li>
+            </ul>
+        </div>
+        <div class="todo-list">
+            <h1>Список дел:</h1>
+            <form class="create-new-todo">
+                <input type="text" class="message" placeholder="Описание">
+            <button class="add">Добавить</button>
+            </form>
+
+            <div class="wrapper">
+                <ul class="todo"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
