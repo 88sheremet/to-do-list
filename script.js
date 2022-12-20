@@ -7,20 +7,17 @@ const refs = {
   hidden: document.querySelector(".hidden"),
 };
 
-
-
 refs.info.addEventListener("click", () => {
   refs.infoContainer.style.display = "flex";
   refs.hidden.style.display = "block";
-  refs.info.style.display = "none"
+  refs.info.style.display = "none";
 });
 
 refs.hidden.addEventListener("click", () => {
   refs.infoContainer.style.display = "none";
   refs.info.style.display = "block";
-  refs.hidden.style.display = "none"
+  refs.hidden.style.display = "none";
 });
-
 
 let todoList = [];
 
@@ -31,7 +28,6 @@ if (localStorage.getItem("todo")) {
 
 refs.addButton.addEventListener("click", (e) => {
   e.preventDefault();
-  //   console.log(refs.addMessage.value);
 
   if (!refs.addMessage.value) {
     return;
@@ -43,10 +39,7 @@ refs.addButton.addEventListener("click", (e) => {
     important: false,
   };
 
-  console.log(newTodo);
-
   todoList.push(newTodo);
-  console.log(todoList);
 
   displayMessages();
 
@@ -80,7 +73,6 @@ refs.todo.addEventListener("change", (e) => {
   let idInput = e.target.getAttribute("id");
   let forLabel = refs.todo.querySelector("[for=" + idInput + "]");
   let valueLbel = forLabel.innerHTML;
-  // console.log(valueLbel);
 
   todoList.forEach((item) => {
     if (item.todo === valueLbel) {
@@ -105,6 +97,3 @@ refs.todo.addEventListener("contextmenu", (e, i) => {
     }
   });
 });
-
-// ПРАВАЯ КНОПКА МЫШИ ВЫДЕЛЯЕТ СОБЫТИЕ
-// CTRL + ПРАВАЯ КНОПКА МЫШИ УДАЛЯЕТ СОБЫТИЕ

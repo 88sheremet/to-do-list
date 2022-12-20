@@ -1,257 +1,263 @@
-body{
-font-family:'Times New Roman', Times, serif;
-background-size: 50px 50px;
-background-color: #726144;
-background-image: -webkit-linear-gradient(0deg, #5a4e39, transparent 50%, transparent);
-background-image: -moz-linear-gradient(0deg, #5a4e39 50%, transparent 50%, transparent);
-background-image: linear-gradient(90deg, #5a4e39 50%, transparent 50%, transparent);
-font-size:large;
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-size: 50px 50px;
+  background-color: #726144;
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #5a4e39,
+    transparent 50%,
+    transparent
+  );
+  background-image: -moz-linear-gradient(
+    0deg,
+    #5a4e39 50%,
+    transparent 50%,
+    transparent
+  );
+  background-image: linear-gradient(
+    90deg,
+    #5a4e39 50%,
+    transparent 50%,
+    transparent
+  );
+  font-size: large;
 }
 
-
-
-.container{
-    margin: 0 auto;
-    padding: 30px;
-    
+.container {
+  margin: 0 auto;
+  padding: 30px;
 }
 
-@media screen and (min-width:480px){
-.container{
+@media screen and (min-width: 480px) {
+  .container {
     margin: 0 auto;
     padding: 50px;
-    
-}
-}
-
-@media screen and (min-width:768px){
-    .container{
-        margin: 0 auto;
-        padding: 50px;
-        
-    }  
+  }
 }
 
-@media screen and (min-width:1200px){
-    .container{
-        margin: 0 auto;
-        padding: 50px; 
-    }   
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    padding: 50px;
+  }
 }
 
-.important{
-    font-weight: bold;
-    color:rgb(80, 16, 16)
+@media screen and (min-width: 1200px) {
+  .container {
+    margin: 0 auto;
+    padding: 50px;
+  }
 }
 
-.info{
-    
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 8px;
-    color: #fff;
-    background-color: #aca3a871;
-    border: none;
-   min-height: 20px;
+.important {
+  font-weight: bold;
+  color: rgb(80, 16, 16);
 }
 
-.info:hover{
-    background-color: #2926287c;  
+.info {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 8px;
+  color: #fff;
+  background-color: #aca3a871;
+  border: none;
+  min-height: 20px;
 }
 
-.hidden{
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-    padding: 8px;
-    color: #fff;
-    background-color: #aca3a871;
-    border: none;
-   min-height: 20px;
+.info:hover {
+  background-color: #2926287c;
 }
 
-.hidden:hover{
-    background-color: #2926287c;  
+.hidden {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 8px;
+  color: #fff;
+  background-color: #aca3a871;
+  border: none;
+  min-height: 20px;
 }
 
-.info__container{
-    display: none;
-    font-size: 14px;
-    background-color: #5e4b2ca1;
-    /* background-color: #5c4a2e75; */
-    margin-left: auto;
-    margin-right: auto;
+.hidden:hover {
+  background-color: #2926287c;
+}
+
+.info__container {
+  display: none;
+  font-size: 14px;
+  background-color: #5e4b2ca1;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .info__container {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .info__container {
+    font-size: 18px;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info__container {
+    width: 500px;
+  }
+}
+
+.todo-list {
+  max-width: 400px;
+  min-height: 200px;
+  display: block;
+  background-color: rgb(60, 122, 60);
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px 0#065e32;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.message {
+    width: 165px;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  border: #000;
+}
+
+@media screen and (min-width: 480px) {
+  .message {
     width: 240px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  }
 }
 
-@media screen and (min-width:480px){
-    .info__container{
-        width: 350px; 
-        
-    }
-    }
-    
-    @media screen and (min-width:768px){
-        .info__container{
-            font-size: 18px;  
-            width: 450px; 
-        }  
-    }
-    
-    @media screen and (min-width:1200px){
-        .info__container{
-            width: 500px;  
-        }   
-    }
-
-.todo-list{
-    max-width: 400px;
-    min-height: 200px;
-    display: block;
-    background-color: rgb(60, 122, 60);
-    padding: 10px;
-    border-radius: 15px;
-margin: 0 auto;
-box-shadow: 0 2px 10px 0#065e32;
+@media screen and (min-width: 768px) {
+  .message {
+    width: 370px;
+  }
 }
 
-h1{
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 30px;
+@media screen and (min-width: 1200px) {
+  .message {
+    width: 370px;
+  }
 }
 
-.message{
-    /* width: 270px; */
-    padding: 10px;
-    border-radius: 15px;
-    outline: none;
-    border: #000;
-    
+.create-new-todo {
+  text-align: center;
 }
 
-@media screen and (min-width:480px){
-    .message{
-        width: 240px;     
-        
-    }
-    }
-    
-    @media screen and (min-width:768px){
-        .message{
-            width: 370px;   
-        }  
-    }
-    
-    @media screen and (min-width:1200px){
-        .message{
-            width: 370px;   
-        }   
-    }
-
-.create-new-todo{
-    text-align: center;
+.add {
+  margin-top: 14px;
+  width: 185px;
+  border-radius: 15px;
+  border: #000;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.add{
-    margin-top: 14px;
-    width: 185px; 
-    border-radius: 15px;
-    border: #000;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
+.add:hover,
+.add:focus {
+  background-color: #ddd7cea1;
+  border-color: #000;
+  font-size: 15px;
+  font-weight: 550;
 }
 
-.add:hover, .add:focus{
-background-color: #ddd7cea1;
-border-color: #000;
-font-size: 15px;
-font-weight: 550;
+@media screen and (min-width: 480px) {
+  .add {
+    width: 260px;
+  }
 }
 
-@media screen and (min-width:480px){
-    .add{
-        width: 260px;     
-        
-    }
-    }
-    
-    @media screen and (min-width:768px){
-        .add{
-            width: 390px;   
-        }  
-    }
-    
-    @media screen and (min-width:1200px){
-        .add{
-            width: 390px;  
-        }   
-    }
-
-.todo{
-    padding-left: 0;
+@media screen and (min-width: 768px) {
+  .add {
+    width: 390px;
+  }
 }
 
-.todo li{
-    padding: 1em;
-    list-style: none;
+@media screen and (min-width: 1200px) {
+  .add {
+    width: 390px;
+  }
 }
 
-.todo li:not(last-child){
-    border-bottom: 1px solid #000
+.todo {
+  padding-left: 0;
 }
 
-input[type=checkbox]{
-    opacity: 0;
-    position: absolute;
+.todo li {
+  padding: 1em;
+  list-style: none;
 }
 
-input[type=checkbox], label{
-    display: inline-block;
-    vertical-align: middle;
-    margin: 5px;
-    cursor: pointer;
+.todo li:not(last-child) {
+  border-bottom: 1px solid #000;
 }
 
-input[type=checkbox] + label:before{
-    content: '';
-    border-radius: 5px;
-    border: 2px solid #ddd;
-    display: inline-block;
-    vertical-align: middle;
-    width: 10px;
-    height: 10px;
-    padding: 2px;
-    margin-right: 10px;
-    text-align: center;
+input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
 }
 
-input[type=checkbox]:checked + label:before{
-    content: '';
-    border: solid rgb(204, 201, 18);
-    display: inline-block;
-    vertical-align: middle;
-    width: 1px;
-    height: 5px;
-    padding: 2px;
-    border-radius: 0;
-    border-width: 0 3px 3px 0;
-    margin: 0 15px 5px 5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
+input[type="checkbox"],
+label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:before {
+  content: "";
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
+  padding: 2px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "";
+  border: solid rgb(204, 201, 18);
+  display: inline-block;
+  vertical-align: middle;
+  width: 1px;
+  height: 5px;
+  padding: 2px;
+  border-radius: 0;
+  border-width: 0 3px 3px 0;
+  margin: 0 15px 5px 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
 }
